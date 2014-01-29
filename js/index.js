@@ -26,7 +26,7 @@ var app = {
 	},
 
 	capturePhoto: function() {
-		navigator.camera.getPicture(onPhotoDataSuccess, onFail, {
+		navigator.camera.getPicture(app.onPhotoDataSuccess, app.onFail, {
 			quality: 50,
 			destinationType: destinationType.DATA_URL
 		});
